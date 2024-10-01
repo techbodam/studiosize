@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+.header{
+    height:10vh;
+    width:100%;
+    backdrop-filter: blur(5px);
+    border-bottom: 0.5px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3.8vw;
+    position: fixed;
+    top:0;
+    transition: all ease 0.3s;
+    z-index: 999;
+}
+.part-2 ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.part-2 ul li {
+    font-size: 1.11vw;
+    text-transform: capitalize;
+    list-style: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav.stroke ul li a,
+nav.fill ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 2px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.page-1 {
+    height: 50vh;
+    width: 100%;
+    margin-top:10vh;
+}
+.page-1 h1 {
+    font-size: 5vw;
+    width: 60%;
+    text-align: left;
+    font-weight: 1000;
+    line-height: 5vw;
+    letter-spacing: -1px;
+    margin: 14vw 2vw;
+    word-spacing: -6px;
+}
+
+.page-2 {
+    height: 100vh;
+    width: 100%;
+}
+
+.page-2 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page-3 {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.page-3 .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6vw 3vw;
+}
+
+.title h1 {
+    font-size: 3vw;
+}
+
+.page-3 .part-2 #btn1 {
+    background-color: transparent;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 50px;
+    padding: 14px 22px;
+    border: 0.5px solid #565656;
+    transition: all ease 0.3s;
+
+}
+
+.page-3 .part-2 #btn2 {
+    background-color: #111;
+    height: 55px;
+    width: 55px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    transition: all ease 0.3s;
+}
+
+.page-3 .part-2 #btn2:hover {
+    background-color: #333;
+}
+
+.page-3 .part-2 #btn1:hover {
+    background-color: #333;
+}
+
+.slider {
+    height: 100vh;
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slider .box {
+    height: 100%;
+    width: 31%;
+    border-radius: 10px;
+}
+
+.slider .box video {
+    height: 88%;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.slider .box h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.slider .box h3 {
+    font-size: 20px;
+    color: #444;
+    font-weight: 500;
+}
+
+.page-4 {
+    height: 100vh;
+    width: 100%;
+    padding-top: 8vw;
+}
+
+.page-4 h1 {
+    font-size: 5vw;
+    font-weight: 999;
+    width: 60%;
+    line-height: 5vw;
+    word-spacing: -5px;
+    padding-left: 3vw;
+}
+
+.page-4 .banner .left video {
+    height: 80%;
+    width: 80%;
+}
+
+.page-4 .banner {
+    width: 85%;
+    margin: 4vw auto;
+    display: flex;
+    align-items: center;
+}
+
+.banner .right {
+    width: 70%;
+    padding-left: 4vw;
+}
+
+.banner .right p {
+    margin-top: 4vw;
+    font-size: 1.4vw;
+}
+
+.banner .right p button {
+    background-color: #222;
+    margin-left: 20px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 28px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    transition: all ease 0.3s;
+}
+
+.banner .right p button:hover {
+    background-color: #444;
+}
+
+.page-5{
+    margin-top: 6vw;
+    min-height:100vh;
+    width: 100%;
+    display: flex;
+   position: relative;
+}
+
+.page-5 .left-part {
+    width: 40%;
+    padding: 2vw;
+}
+
+.page-5 .right-part {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+
+.page-5 .right-part h1 {
+    font-size: 5.5vw;
+    color: #444;
+    height: 5.3vw;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.page-5 .right-part h1:hover {
+    color: #fff;
+    padding-left: 4vw;
+}
+
+.page-5 .left-part .img-box {
+    height: 65vh;
+    width: 85%;
+    padding-top:5vw;
+    position: sticky;
+    top:5%;
+    transition: all ease 0.5s;
+    z-index: 999999;
+}
+
+.img-box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+.page-6 {
+    height: 100vh;
+    width: 100%;
+    padding: 3vw;
+    margin-top: 4vw;
+}
+
+.swiper {
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide img {
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    height: 40vh;
+    width: 100%;
+    margin:2vw 0vw;
+    padding: 2vw 0vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about .part2,
+.part3>{
+    height: 100%;
+    width: 32%;
+    border: 1px solid #333;
+    /* background-color: purple; */
+}
+.about p{
+    font-size: 22px;
+    padding:1vw;
+    font-weight: 600;
+}
+
+.about>.part2 {
+    margin-left: 22vw;
+}
+.about>.part1{
+    display: flex;
+    gap: 5px;
+}
+.part1 button{
+     background-color: #222;
+     color: #fff;
+     height: 55px;
+     width: 55px;
+     border:none;
+     border-radius: 50%;
+    font-size: 25px;
+    transition: all ease 0.3s;
+}
+.part1>button:hover{
+    background-color: #444;
+}
+.page-7{
+    height: 110vh;
+    width:95%;
+    margin:15vw auto;
+    position: relative;
+}
+.page-7 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius:20px;
+    z-index: -1;
+}
+.page-7 .text-div h1{
+   font-size: 5vw;
+   width:60%;
+   line-height: 5vw;
+   padding-top:25%;
+   padding-left: 5%;
+} 
+.page-7 h2{
+    padding-top: 20px;
+    padding-left: 5%;
+}
+.page-7 h2>span{
+    background-color: #fff;
+    color: #000;
+    font-size: 25px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+footer{
+    margin-top:10vw;
+    height:140vh;
+    width:100%;
+    padding-top:10vw;
+    padding-bottom:30vw;
+    position: relative;
+}
+.footer-top{
+    height:15vh;
+    width:95%;
+    border-bottom: 1px solid #fff;
+    margin: auto;
+}
+.footer-top ul{
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items:center;
+   justify-content: space-between;
+   position: relative;
+
+}
+.footer-top:hover ul{
+    color: #444;
+}
+.footer-top ul li:hover{
+    color: #fff;
+}
+.footer-top ul li{
+    text-transform: capitalize;
+    list-style: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.footer-top ul li .hide-div{
+    position:absolute;
+    top:90%;
+    height:26vh;
+    width:22%;
+    scale:0;
+    transition: all ease 0.3s;
+}
+.footer-top ul li:hover .hide-div{
+    scale: 1;
+}
+.footer-top .hide-div video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.footer-line{
+    width: 95%;
+    margin:auto;
+    margin-top:5vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+}
+.footer-line ul{
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly;
+   gap: 10px;
+   width:40%;
+}
+.footer-line ul li{
+    list-style: none;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.footer-line ul li:hover{
+    color: #fff;
+}
+footer h1{
+    font-size:30vw;
+    margin-bottom:20vh;
+    position: absolute;
+    top:25%;
+    left:2%;
+    /* letter-spacing:-0.8vw; */
+    
+}
+footer h1 span{
+    font-size:50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
